@@ -1,5 +1,5 @@
 // pages/events/index.js
-import EventListing from '../../components/events/EventListing';
+import EventListing from '../../components/events/eventListing';
 import Layout from '../../components/events/layout';
 
 const EventsPage = () => {
