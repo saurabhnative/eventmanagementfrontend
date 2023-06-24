@@ -8,7 +8,7 @@ const EventForm = () => {
   const [location, setLocation] = useState('');
   const [ticketPrice, setTicketPrice] = useState('');
   const [ticketQuantity, setTicketQuantity] = useState('');
-
+  const [imageURL, setImageURL] = useState('');
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -21,6 +21,7 @@ const EventForm = () => {
         location,
         ticketPrice,
         ticketQuantity,
+        imageURL,
       });
       const response = await api.post('/events', {
         title,
@@ -29,6 +30,7 @@ const EventForm = () => {
         location,
         ticketPrice,
         ticketQuantity,
+        imageURL,
       });
       console.log('Event created successfully:', response.data);
     } catch (error) {
@@ -90,6 +92,19 @@ const EventForm = () => {
             id="location"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <label htmlFor="imageURL" className="block font-medium mb-1">
+            Image Link
+          </label>
+          <input
+            type="text"
+            id="imageURL"
+            value={imageURL}
+            onChange={(e) => setImageURL(e.target.value)}
             className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
             required
           />

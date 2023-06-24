@@ -27,7 +27,7 @@ const EventListing = () => {
       {events.length === 0 && !isLoading ? (
         <p>No events found.</p>
       ) : (
-        <div className="space-y-4">
+        <div className="space-y-4 eventsHeight overflow-y-scroll">
           {events.map((event) => (
             <EventCard event={event} key={event._id} />
           ))}

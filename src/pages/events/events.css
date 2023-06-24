@@ -19,3 +19,7 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
+
+.eventsHeight {
+  height: 80vh;
+}
