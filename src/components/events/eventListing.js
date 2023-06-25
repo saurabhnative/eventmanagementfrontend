@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import EventCard from './eventCard';
 import api from '../../utils/apiClient';
 
-const EventListing = () => {
+const EventListing = (props) => {
   const [events, setEvents] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -29,7 +29,7 @@ const EventListing = () => {
       ) : (
         <div className="space-y-4 eventsHeight overflow-y-scroll">
           {events.map((event) => (
-            <EventCard event={event} key={event._id} />
+            <EventCard event={event} key={event._id} source={props.source} />
           ))}
         </div>
       )}

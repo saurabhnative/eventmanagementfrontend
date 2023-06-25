@@ -1,6 +1,9 @@
 import React from 'react';
 import Sidebar from './sidebar';
 import Header from './eventHeader';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+
 const Layout = ({ children }) => {
   return (
     <div>
@@ -11,6 +14,7 @@ const Layout = ({ children }) => {
           {/* Main content */}
           {children}
         </main>
+        <ToastContainer />
       </div>
     </div>
   );

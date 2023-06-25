@@ -1,10 +1,16 @@
-import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+
+import { useRouter } from 'next/router';
 
 const Header = () => {
+  const router = useRouter();
+
   // Handle logout functionality
-  const handleLogout = () => {
+  const handleLogout = async () => {
     // Implement logout logic here
     // ...
+    localStorage.clear();
+    router.push('/');
   };
 
   return (
