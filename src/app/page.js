@@ -26,9 +26,12 @@ const Hero = () => (
       <div className="items-center flex flex-wrap">
         <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div className="pr-12">
-            <h1 className="text-white font-semibold text-5xl">
-              Your event management goals starts with us
+            <h1 className="text-white font-semibold text-5xl py-4">
+              Event Vortex
             </h1>
+            <h3 className="text-white font-semibold text-xl">
+              Your event management goals starts with us
+            </h3>
             <p className="mt-4 text-lg text-gray-300">
               Host events on various topics and allow users to register
               themselves, attend them and bond with other participants.
@@ -70,7 +73,7 @@ const Services = () => (
                 <i className="fas fa-award"></i>
               </div>
               <h6 className="text-xl font-semibold">
-                Awarded Event Management Platform
+                Award winning Event Management Platform
               </h6>
               <p className="mt-2 mb-4 text-gray-600">
                 Divide details about your event or users work into parts. Add
@@ -127,9 +130,6 @@ const Services = () => (
             The platform comes with prebuilt forms to easily customize and
             create events.
           </p>
-          <a href="#" className="font-bold text-gray-800 mt-8">
-            Check Event registration page!
-          </a>
         </div>
 
         <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">

@@ -20,7 +20,7 @@ function Navbar(props) {
             }
             href="#"
           >
-            Event Management Platform
+            Event Vortex
           </a>
         </div>
         <div
