@@ -27,7 +27,7 @@ const Hero = () => (
         <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
           <div className="pr-12">
             <h1 className="text-white font-semibold text-5xl py-4">
-              Event Vortex
+              EventWhiz
             </h1>
             <h3 className="text-white font-semibold text-xl">
               Your event management goals starts with us

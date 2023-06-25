@@ -20,7 +20,7 @@ function Navbar(props) {
             }
             href="#"
           >
-            Event Vortex
+            EventWhiz
           </a>
         </div>
         <div
