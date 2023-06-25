@@ -14,6 +14,7 @@ const EventListing = (props) => {
         setIsLoading(false);
       } catch (error) {
         console.error(error);
+        setIsLoading(false);
       }
     };
 

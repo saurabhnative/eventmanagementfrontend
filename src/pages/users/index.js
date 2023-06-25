@@ -1,7 +1,7 @@
 // pages/events/index.js
 import { useEffect } from 'react';
 import EventListing from '../../components/events/eventListing';
-import Layout from '../../components/events/layout';
+import Layout from '../../components/users/layout';
 import '../events/events.css';
 
 const UsersPage = () => {

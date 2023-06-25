@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import api from '../../utils/apiClient';
-
+import { toast } from 'react-toastify';
 const EventForm = () => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -33,9 +33,11 @@ const EventForm = () => {
         imageURL,
       });
       console.log('Event created successfully:', response.data);
+      toast.success('Event created successfully');
     } catch (error) {
-      console.error('Error creating event:', error.response.data);
+      console.error('Error creating event:', error && error.data);
       // Handle the error appropriately
+      toast.error('Error creating event. Please try again.');
     }
   };
 
