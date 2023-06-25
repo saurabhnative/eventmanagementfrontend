@@ -23,7 +23,7 @@ const LandingPage = () => {
           </div>
           <div className="md:col-span-1 flex flex-col justify-center">
             <h2 className="text-2xl font-semibold mb-4">
-              Organize and Manage Events with Ease
+              Organize Events with Ease
             </h2>
             <p className="text-lg mb-6">
               Our Event Management Platform offers a comprehensive solution for
