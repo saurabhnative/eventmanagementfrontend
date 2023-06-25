@@ -120,7 +120,7 @@ const Services = () => (
             Working with us is a pleasure
           </h3>
           <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-            Don't let your users move away from page by grabbing their
+            Do not let your users move away from page by grabbing their
             attention. Allow them to observe your events in interesting card UI.
           </p>
           <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
@@ -209,7 +209,7 @@ const Featured = () => (
             </h3>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
               The platform comes with probuilt forms to help you get started
-              faster. You can change the text and image URLs and you're good to
+              faster. You can change the text and image URLs and you are good to
               go.
             </p>
             <ul className="list-none mt-6">

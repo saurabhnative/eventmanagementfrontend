@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Navbar(props) {
   return (
@@ -17,7 +18,7 @@ function Navbar(props) {
               (props.transparent ? 'text-white' : 'text-gray-800') +
               ' title-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase'
             }
-            href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
+            href="#"
           >
             Event Management Platform
           </a>
@@ -94,7 +95,7 @@ function Navbar(props) {
             </li>
 
             <li className="flex items-center">
-              <a href="/eventlogin">
+              <Link href="/eventlogin">
                 <button
                   className={
                     (props.transparent
@@ -107,7 +108,7 @@ function Navbar(props) {
                 >
                   <i className="fas fa-user-cog"></i> Event Login
                 </button>
-              </a>
+              </Link>
             </li>
 
             <li className="flex items-center">
@@ -121,9 +122,9 @@ function Navbar(props) {
                 type="button"
                 style={{ transition: 'all .15s ease' }}
               >
-                <a href="/userlogin">
+                <Link href="/userlogin">
                   <i className="fas fa-user-circle"></i> User Login
-                </a>
+                </Link>
               </button>
             </li>
           </ul>
