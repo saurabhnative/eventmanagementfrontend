@@ -1,11 +1,11 @@
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import api from '../../utils/apiClient';
+import { toast } from 'react-toastify';
 
 const EventUpdatePage = () => {
   const router = useRouter();
   const { eventId } = router.query; // Access the event ID from the query parameters
-  console.log('eventId', eventId);
   const [eventData, setEventData] = useState(null);
   const [updatedData, setUpdatedData] = useState({
     title: '',
@@ -48,10 +48,10 @@ const EventUpdatePage = () => {
         updatedData,
       });
       const data = response.data;
-      console.log('Event updated:', data);
       // Redirect or display a success message
+      toast.success('Event updated successfully');
     } catch (error) {
-      console.error('Error updating event:', error);
+      toast.error('Error updating event. Please try again.');
     }
   };
 

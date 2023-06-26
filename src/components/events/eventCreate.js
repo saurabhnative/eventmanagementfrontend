@@ -13,16 +13,6 @@ const EventForm = () => {
     e.preventDefault();
     try {
       // Perform form submission or data processing here
-      console.log('Form submitted!');
-      console.log({
-        title,
-        description,
-        date,
-        location,
-        ticketPrice,
-        ticketQuantity,
-        imageURL,
-      });
       const response = await api.post('/events', {
         title,
         description,
@@ -32,10 +22,8 @@ const EventForm = () => {
         ticketQuantity,
         imageURL,
       });
-      console.log('Event created successfully:', response.data);
       toast.success('Event created successfully');
     } catch (error) {
-      console.error('Error creating event:', error && error.data);
       // Handle the error appropriately
       toast.error('Error creating event. Please try again.');
     }
