@@ -76,7 +76,7 @@ const EventUpdatePage = () => {
             name="title"
             value={updatedData.title}
             onChange={handleInputChange}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
           />
         </div>
@@ -89,7 +89,7 @@ const EventUpdatePage = () => {
             name="description"
             value={updatedData.description}
             onChange={handleInputChange}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
           />
         </div>
@@ -103,7 +103,7 @@ const EventUpdatePage = () => {
             name="date"
             value={new Date(updatedData.date).toISOString().substring(0, 10)}
             onChange={handleInputChange}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
           />
         </div>
@@ -117,7 +117,7 @@ const EventUpdatePage = () => {
             name="location"
             value={updatedData.location}
             onChange={handleInputChange}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
           />
         </div>
@@ -131,7 +131,7 @@ const EventUpdatePage = () => {
             name="ticketPrice"
             value={updatedData.ticketPrice}
             onChange={handleInputChange}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
           />
         </div>
@@ -145,7 +145,7 @@ const EventUpdatePage = () => {
             name="ticketQuantity"
             value={updatedData.ticketQuantity}
             onChange={handleInputChange}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
           />
         </div>
