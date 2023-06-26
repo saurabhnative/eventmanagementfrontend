@@ -20,10 +20,9 @@ const EventCard = ({ event, source }) => {
   const handleEventRegistration = async () => {
     try {
       const attendees = event.attendees;
-      if (!attendees.includes(userEmail)) {
+      if (!attendees.includes(userEmail) && userEmail) {
         attendees.push(userEmail);
       }
-      attendees.push('saurabhnative@gmail.com');
       const updatedData = { attendees };
       const response = await api.put(`/events/${event._id}`, {
         updatedData,
@@ -76,9 +75,12 @@ const EventCard = ({ event, source }) => {
           <p className="text-gray-600">Ticket Price: ${ticketPrice}</p>
           <p className="text-gray-600">Available Tickets: {ticketQuantity}</p>
         </div>
-        <div className="flex justify-between items-center mt-4 w-50">
-          <p className="text-gray-600">Event attendees: {attendees.length}</p>
-        </div>
+        {attendees.length ? (
+          <div className="flex justify-between items-center mt-4 w-50">
+            <p className="text-gray-600">{attendees.length} attendees</p>
+          </div>
+        ) : null}
+
         {source === 'users' ? (
           renderUserRegistration()
         ) : (
