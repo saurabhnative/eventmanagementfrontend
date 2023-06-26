@@ -44,8 +44,9 @@ const EventForm = () => {
             id="title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
+            placeholder="Enter Event Title"
           />
         </div>
         <div className="mb-4">
@@ -56,8 +57,9 @@ const EventForm = () => {
             id="description"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
+            placeholder="Enter Event Description"
           ></textarea>
         </div>
         <div className="mb-4">
@@ -69,7 +71,7 @@ const EventForm = () => {
             id="date"
             value={date}
             onChange={(e) => setDate(e.target.value)}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
           />
         </div>
@@ -82,8 +84,9 @@ const EventForm = () => {
             id="location"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
+            placeholder="Enter Event Location"
           />
         </div>
         <div className="mb-4">
@@ -95,8 +98,9 @@ const EventForm = () => {
             id="imageURL"
             value={imageURL}
             onChange={(e) => setImageURL(e.target.value)}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
+            placeholder="Enter Event Image URL"
           />
         </div>
         <div className="mb-4">
@@ -108,8 +112,9 @@ const EventForm = () => {
             id="ticketPrice"
             value={ticketPrice}
             onChange={(e) => setTicketPrice(e.target.value)}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
+            placeholder="Enter Ticket Price"
           />
         </div>
         <div className="mb-4">
@@ -121,8 +126,9 @@ const EventForm = () => {
             id="ticketQuantity"
             value={ticketQuantity}
             onChange={(e) => setTicketQuantity(e.target.value)}
-            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+            className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-purple-500 shadow"
             required
+            placeholder="Enter Ticket Quantity"
           />
         </div>
         <div className="flex justify-center">

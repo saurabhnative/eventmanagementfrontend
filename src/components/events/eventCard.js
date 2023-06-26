@@ -33,7 +33,6 @@ const EventCard = ({ event, source }) => {
       // Redirect or display a success message
       toast.success('Event registration successful!');
     } catch (error) {
-      console.error('Error updating event:', error);
       toast.error('Event registration failed. Please try again.');
     }
   };
@@ -56,10 +55,10 @@ const EventCard = ({ event, source }) => {
     }
   }
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 flex">
+    <div className="bg-white shadow-md border-b border border-gray-200 rounded-lg p-4 flex">
       <div className="flex items-center">
         <img
-          className="w-50 h-40 object-cover rounded"
+          className="w-80 h-76 object-cover rounded"
           src={imageURL}
           alt={title}
         />
