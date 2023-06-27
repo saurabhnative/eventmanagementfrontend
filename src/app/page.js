@@ -76,8 +76,8 @@ const Services = () => (
                 Award winning Event Management Platform
               </h6>
               <p className="mt-2 mb-4 text-gray-600">
-                Divide details about your event or users work into parts. Add
-                details as per user requirements and skills.
+                Divide details about your event into parts. Add details as per
+                target audience.
               </p>
             </div>
           </div>
@@ -123,8 +123,8 @@ const Services = () => (
             Working with us is a pleasure
           </h3>
           <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-            Do not let your users move away from page by grabbing their
-            attention. Allow them to observe your events in interesting card UI.
+            Keep users engaged in events by grabbing their attention. Allow them
+            to observe your events shown in interesting card UI.
           </p>
           <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
             The platform comes with prebuilt forms to easily customize and
@@ -208,7 +208,7 @@ const Featured = () => (
               A growing event management compnay
             </h3>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
-              The platform comes with probuilt forms to help you get started
+              The platform comes with prebuilt forms to help you get started
               faster. You can change the text and image URLs and you are good to
               go.
             </p>
@@ -297,7 +297,7 @@ const Finisher = () => (
             <i className="fas fa-medal text-xl"></i>
           </div>
           <h6 className="text-xl mt-5 font-semibold text-white">
-            Excelent Services
+            Excellent Services
           </h6>
           <p className="mt-2 mb-4 text-gray-500">
             Great services in easy to use interface.
