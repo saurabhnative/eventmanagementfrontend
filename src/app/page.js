@@ -205,7 +205,7 @@ const Featured = () => (
               <i className="fas fa-rocket text-xl"></i>
             </div>
             <h3 className="text-3xl font-semibold">
-              A growing event management compnay
+              A growing event management company
             </h3>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
               The platform comes with prebuilt forms to help you get started
